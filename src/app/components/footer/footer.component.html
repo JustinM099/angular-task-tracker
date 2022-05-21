@@ -1,0 +1,5 @@
+<footer>
+    <p>Copyright &copy; 2021</p>
+    <a *ngIf="hasRoute('/'); else elseBlock" routerLink="/about">About</a>
+    <ng-template #elseBlock><a routerLink="/">Go Back</a></ng-template>
+</footer>
